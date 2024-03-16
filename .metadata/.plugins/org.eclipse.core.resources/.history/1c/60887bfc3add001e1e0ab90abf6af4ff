@@ -1,0 +1,13 @@
+package Ejercicio_03;
+
+public class Uso_animal {
+	
+	public static void main(String[] args) {
+		Gato gato = new Gato("Tommy");
+		gato.amamantar();
+		gato.arañar();
+		gato.comer();
+		gato.domir();
+		gato.maullar();
+	}
+}

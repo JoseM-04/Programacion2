@@ -1,0 +1,16 @@
+package Ejercicio_01;
+
+public class Bicicleta {
+
+	private String modelo, tipoFrenos;
+	
+	public Bicicleta(String modelo, String tipoFrenos) {
+		super();
+		this.modelo = modelo;
+		this.tipoFrenos = tipoFrenos;
+	}
+	
+	public void hacerUnTruco() {
+		System.out.println("Estoy haciendon el caballito");
+	}
+}

@@ -1,0 +1,52 @@
+package Ejercicio_04;
+
+import java.util.Scanner;
+
+public class Uso_pizza {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int opciones;
+		
+		do {
+			
+			System.out.println("Elije una opcion :\n" + 
+										  "1. Pedir pizza\n" + 
+										  "0. Salir");
+			opciones =sc.nextInt();
+			
+			switch (opciones) {
+				case 1:
+				    	pedirPizza();
+					break;
+				
+				case 0:
+					System.out.println("Adios!!!");
+					break;
+					
+				default:
+					System.out.println("Opcion no valida");
+			}
+			
+			
+			
+		} while (opciones != 0);
+		
+	}
+
+private static void pedirPizza() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Introduce el tipo de pizza : (Carbonara, Cuatro quesos, Vegana)");
+		String tipo = sc.nextLine();
+		
+		System.out.println("Introduce el tamaño de la pizza (Pequeña, Mediana, Familiar)");
+		String tamaño = sc.nextLine();
+		
+		Pizza pizza = new Pizza(tipo, tamaño);
+		System.out.println("Pizaa pedida : " + pizza);
+	}
+}

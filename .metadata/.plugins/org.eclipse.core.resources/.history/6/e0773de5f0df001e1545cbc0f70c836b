@@ -1,0 +1,17 @@
+package Ejercicio_04;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Capitales {
+	
+	public static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		HashMap<String, String> capitales = new HashMap<String, String>();
+		capitales.put("España", "Madrid");
+		capitales.put("Portugal", "Lisboa");
+		capitales.put("Francia", "Paris");
+	}
+}

@@ -1,0 +1,61 @@
+package Ejercicio_03;
+
+public class Fraccion {
+
+	private int numerador;
+	private int denominador;
+	
+	public Fraccion(int numerador, int denominador) {
+		if (denominador == 0) {
+			throw new IllegalArgumentException("El denominador no puede ser cero.");
+		}
+		this.numerador = numerador;
+		this.denominador = denominador;
+	}
+	
+	//Invertir fraccion
+	public void invertir() {
+		int temp = numerador;
+		numerador = denominador;
+		denominador = temp;
+	}
+	
+	//Simplificar fraccion
+	public void simplificar() {
+		int gcd = gcd(numerador, denominador);
+		numerador /= gcd;
+		denominador /= gcd;
+	}
+	
+	//Multiplicar fraccion
+	public void multiplicar(Fraccion fraccion2) {
+		numerador *= fraccion2.numerador;
+		denominador *= fraccion2.denominador;
+	}
+	
+	//Dividir fraccion
+	public void dividir(Fraccion fraccion2) {
+		if (fraccion2.numerador == 0) {
+			throw new IllegalArgumentException("No se puede dividir por cero.");
+		}
+		numerador *= fraccion2.denominador;
+		denominador *= fraccion2.numerador;
+	}
+	
+	//Calcular MCD
+	private int gcd(int a, int b) {
+		while(b != 0) {
+			int temp = b;
+			b = a % b;
+			a = temp;
+		}
+		return Math.abs(a);
+	}
+	
+	@Override
+	public String toString() {
+		return numerador + "/" + denominador;
+	}
+	
+	
+}

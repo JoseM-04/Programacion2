@@ -1,0 +1,13 @@
+package Ejercicio_01;
+
+public class Uso_vehiculo {
+
+	public static void main(String[] args) {
+		
+		int opciones;
+		
+		do {
+			
+		} while (opciones != 0);
+	}
+}

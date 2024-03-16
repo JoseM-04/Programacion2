@@ -1,0 +1,32 @@
+package Ejercicio_01;
+
+public class Bicicleta extends Vehiculo {
+
+	private String modelo, tipoFrenos;
+	
+	public Bicicleta(String modelo, String tipoFrenos) {
+		super();
+		this.modelo = modelo;
+		this.tipoFrenos = tipoFrenos;
+	}
+	
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getTipoFrenos() {
+		return tipoFrenos;
+	}
+
+	public void setTipoFrenos(String tipoFrenos) {
+		this.tipoFrenos = tipoFrenos;
+	}
+
+	public String hacerUnTruco() {
+		return "Estoy haciendon el caballito";
+	}
+}

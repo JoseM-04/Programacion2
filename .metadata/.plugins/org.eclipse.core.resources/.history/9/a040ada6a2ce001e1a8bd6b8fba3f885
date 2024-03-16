@@ -1,0 +1,12 @@
+package Ejercicio_05;
+
+public class Uso_estudiante {
+
+	public static void main(String[] args) {
+		
+		Estudiante alumno1 = new Estudiante("Jose", " ", 20, 10);
+		Estudiante alumno2 = new Estudiante("Carlos", 20, 7);
+		
+		System.out.println(alumno1.getLogro());
+	}
+}

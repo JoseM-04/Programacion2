@@ -1,0 +1,11 @@
+package Ejercicio_05;
+
+public class Uso_estudiante {
+
+	public static void main(String[] args) {
+		
+		Estudiante alumno1 = new Estudiante("Jose", null, 20, 10);
+		
+		System.out.println(alumno1.getLogro());
+	}
+}

@@ -1,0 +1,22 @@
+package Ejercicio_02;
+
+import java.util.ArrayList;
+
+public class main {
+	
+	String cadena = "ABCDEFGHYJKLMNÑOPQRSTUVXYZ";
+	
+	public static int alea(int li, int ls) {
+		return (int)(Math.random() * (ls - li + 1) + li);
+	}
+	
+	public static void main(String[] args) {
+		
+		ArrayList<String> lista = new ArrayList<String>();
+		
+		
+		
+		
+	}
+
+}

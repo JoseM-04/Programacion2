@@ -1,0 +1,18 @@
+package Principal;
+
+public class Ejercicio_05 {
+
+	public static void main(String[] args) {
+		
+		/*5. Escribe una función en Java para comprobar si un año es bisiesto.*/
+	}
+	
+	public static void bisiesto(int anno) {
+		if ((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0)){
+			System.out.println(anno + " es bisiesto.");
+		} 
+		else {
+			System.out.println(anno + " no es bisiesto.");
+		}
+	}
+}

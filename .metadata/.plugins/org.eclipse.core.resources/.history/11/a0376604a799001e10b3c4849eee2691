@@ -1,0 +1,23 @@
+package Principal;
+
+public class Ejercicio_04 {
+	
+	public static void main(String[] args) {
+		
+		/*4. Implementa una función en Java que encuentre el menor de dos números.*/
+		nummenor(7, -7);
+	}
+	
+	public static void nummenor(int num1, int num2) {
+		if (num1 <  num2) {
+			System.out.println(num1 + " es el menor numero");
+		}
+		else if (num2 < num1) {
+			System.out.println(num2 + " es el menor numero");
+		}
+		else {
+			System.out.println("numeros iguales");
+		}
+	}
+
+}

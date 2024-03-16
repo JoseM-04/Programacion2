@@ -1,0 +1,10 @@
+package Principal;
+
+public class Ejercicio_03 {
+	
+	public static void main(String[] args) {
+		
+		/*3. Desarrolla una función en Java para verificar si un número es negativo.*/
+	}
+
+}

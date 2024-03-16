@@ -1,0 +1,32 @@
+package Ejercicio_03;
+
+import java.util.Scanner;
+
+public class Uso_fraccion {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingresa el numerador de la primera fraccion : ");
+		int numerador1 = sc.nextInt();
+		Fraccion fraccion1 = new Fraccion(4, 8);
+		Fraccion fraccion2 = new Fraccion(3, 4);
+		
+		System.out.println("Fracción 1: " + fraccion1);
+        System.out.println("Fracción 2: " + fraccion2);
+
+        fraccion1.invertir();
+        System.out.println("Fracción 1 invertida: " + fraccion1);
+
+        fraccion2.simplificar();
+        System.out.println("Fracción 2 simplificada: " + fraccion2);
+
+        fraccion1.multiplicar(fraccion2);
+        System.out.println("Fracción 1 * Fracción 2: " + fraccion1);
+
+        fraccion1.dividir(fraccion2);
+        System.out.println("Fracción 1 / Fracción 2: " + fraccion1);
+	}
+
+}

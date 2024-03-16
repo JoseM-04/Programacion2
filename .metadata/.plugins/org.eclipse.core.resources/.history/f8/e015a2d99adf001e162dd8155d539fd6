@@ -1,0 +1,33 @@
+package Ejercicio_03;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Area_restringida {
+	
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		String usuario, contraseña;
+		HashMap<String, String> lista = new HashMap<String, String>();
+		
+		lista.put("Jose", "123456");
+		lista.put("Ana", "123456");
+		lista.put("Carla", "123456");
+		
+		System.out.println("Dime el usuario");
+		usuario = sc.nextLine();
+		
+		System.out.println("Dime la contraseña");
+		contraseña = sc.nextLine();
+		
+		if (lista.containsKey(usuario)) {
+			System.out.println("Ha accedido al area restringuida");
+		}
+		else {
+			System.out.println("La contraseña no coincide");
+		}
+	}
+
+}

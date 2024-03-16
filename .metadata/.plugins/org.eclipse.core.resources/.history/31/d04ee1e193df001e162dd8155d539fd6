@@ -1,0 +1,40 @@
+package Ejercicio_02;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class main {
+	
+	final static String cadena = "ABCDEFGHYJKLMNÑOPQRSTUVXYZ";
+	
+	public static int alea(int li, int ls) {
+		return (int)(Math.random() * (ls - li + 1) + li);
+	}
+	
+	public static String palabra() {
+		String p = "";
+		int n = alea(3,10);
+		for(int i = 1; i <= n; i++) {
+			p += cadena.charAt(alea(0, cadena.length() - 1));
+		}
+		return p;
+	}
+	
+	public static void main(String[] args) {
+		
+		ArrayList<String> lista = new ArrayList<String>();
+		
+		for(int i = 1; i <= 25; i++) {
+			lista.add(palabra());
+		}
+		
+		//Collections.sort(lista);
+		Comparator<String> comparador = Collections.reverseOrder();
+		Collections.sort(lista, comparador);
+		
+		for (String s : lista) {
+			System.out.println(s);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+package Ejercicio_01;
+
+import javax.swing.JOptionPane;
+
+public class Uso_vehiculo {
+
+	public static void main(String[] args) {
+		
+		int opciones;
+		
+		do {
+			
+			opciones = Integer.parseInt(JOptionPane.showInputDialog("Elije una opcion (1-8)\n" + 
+																										   "1. Anda con la bicicleta\n" + 
+																										   "2. Haz el caballito con la bicicleta\n" +
+																										   "3. Anda con el coche\n" + 
+																										   "4. Aceleracion del coche\n" + 
+																										   "5. Ver kilometraje de la bicicleta\n" +
+																										   "6. Ver kilometraje del coche\n" + 
+																										   "7. Ver kilometraje total\n" + 
+																										   "8. Salir"));
+			
+			switch (opciones) {
+				case 1:
+					int cantidad = Integer.parseInt(JOptionPane.showInputDialog("¿Cuantos kilometros recorriste?"));
+					String modelo  = JOptionPane.showInputDialog("¿Cual es el modelo de la bicicleta?");
+					String tipoFrenos = JOptionPane.showInputDialog("¿Cual es tipo de freno que tiene?");
+					Bicicleta bici = new Bicicleta(modelo, tipoFrenos);
+					JOptionPane.showMessageDialog(null, bici.andar(cantidad));
+					break;
+					
+				case 2: 
+					JOptionPane.showConfirmDialog(null, bici.hacerUnTruco());
+	
+				default:
+					break;
+			}
+			
+			
+			
+			
+		} while (opciones != 0);
+	}
+}

@@ -1,0 +1,26 @@
+package Ejercicio_04;
+
+public class Pizza {
+
+	private static int totalPedidas = 0;
+	private static int totalServidas = 0;
+	private String tamaño, tipo, estado;
+	
+	public Pizza(String tipo, String tamaño) {
+		this.estado = "pedida";
+		this.tamaño = tamaño;
+		this.tipo = tipo;
+	}
+	
+	public String toString() {
+		return "Pizza " + this.tipo + " " + this.tamaño + ", " + this.estado;
+	}
+	
+	public static int getTotalPedidas() {
+		return Pizza.totalPedidas;
+	}
+	
+	public static int getTotalServidas() {
+		return Pizza.totalServidas;
+	}
+}

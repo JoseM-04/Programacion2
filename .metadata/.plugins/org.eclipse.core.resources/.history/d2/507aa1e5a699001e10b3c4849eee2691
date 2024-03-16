@@ -1,0 +1,13 @@
+package Principal;
+
+public class Ejercicio_04 {
+	
+	public static void main(String[] args) {
+		
+		/*4. Implementa una función en Java que encuentre el menor de dos números.*/
+		
+	}
+	
+	
+
+}

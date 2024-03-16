@@ -1,0 +1,26 @@
+package Ejercicio_02;
+
+import java.util.Scanner;
+
+public class Main {
+
+	static Scanner sc = new Scanner(System.in);
+	
+	public static String d_a_b(int numero) {
+		String cadena = "";
+		while(numero > 0) {
+			cadena = String.valueOf(numero % 2) + cadena;
+			numero = (int)(numero/2);
+		}
+		return cadena;
+	}
+	
+	public static void main(String[] args) {
+		
+		int numero;
+		System.out.println("Diime un numero ");
+		numero  = Integer.valueOf(sc.nextLine());
+		
+		System.out.println(d_a_b(numero));
+	}
+}

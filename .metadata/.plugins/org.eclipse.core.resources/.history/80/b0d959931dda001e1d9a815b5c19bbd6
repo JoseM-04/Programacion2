@@ -1,0 +1,58 @@
+package Ejercicio_02;
+
+import java.util.Scanner;
+
+public class Main {
+
+	static Scanner sc = new Scanner(System.in);
+	
+	private static String d_a_o(int numero) {
+        String octadecimal = "";
+        int resto;
+        while (numero > 0) {
+            resto = numero % 8;
+            octadecimal = resto + octadecimal;
+            numero /= 8;
+        }
+        return octadecimal;
+    }
+	
+	public static String d_a_h(int numero) {
+		String hexadecimal = "";
+        int resto;
+        char[] hexadecimales = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        while (numero > 0) {
+            resto = numero % 16;
+            hexadecimal = hexadecimales[resto] + hexadecimal;
+            numero /= 16;
+        }
+        return hexadecimal;
+    }
+	
+	public static int alea(int li, int ls) {
+		return (int) (Math.random() * (ls - li + 1)) + li;
+	}
+	
+	public static void rellenar(int matriz[]) {
+		for(int i = 0; i<matriz.length; i++) matriz[i] = alea(0,255);
+	}
+	
+	public static String d_a_b(int numero) {
+		String cadena = "";
+		while(numero > 0) {
+			cadena = String.valueOf(numero % 2) + cadena;
+			numero = (int)(numero/2);
+		}
+		return cadena;
+	}
+	
+	public static void main(String[] args) {
+		
+		int tb[] = new int [50];
+		rellenar(tb);
+		
+		for(int elemento : tb) System.out.printf("valor=%5d Binario =%8s\n",elemento,  d_a_b(elemento));
+		System.out.println("-------------------------------------------------------------------");
+		for(int elementos : tb) System.out.printf("valor=%5d Hexadecimal =%8s\n", elementos, d_a_h(elementos));
+	}
+}

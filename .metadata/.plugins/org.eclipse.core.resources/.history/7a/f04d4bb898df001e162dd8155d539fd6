@@ -1,0 +1,14 @@
+package Ejercicio_03;
+
+import java.util.HashMap;
+
+public class Area_restringida {
+	
+	public static void main(String[] args) {
+		
+		private static final HashMap<String, String> acceso = new HashMap<String, String>();
+		
+		
+	}
+
+}

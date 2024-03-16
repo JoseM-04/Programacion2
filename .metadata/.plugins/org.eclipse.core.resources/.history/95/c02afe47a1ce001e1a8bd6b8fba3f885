@@ -1,0 +1,8 @@
+package Ejercicio_05;
+
+public class Estudiante {
+
+	private String nombre, logro;
+	private int edad;
+	private double promedio;
+}

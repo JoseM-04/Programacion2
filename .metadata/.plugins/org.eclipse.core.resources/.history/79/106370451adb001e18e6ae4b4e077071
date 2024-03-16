@@ -1,0 +1,13 @@
+package Ejercicio_01;
+
+public class Coche extends Vehiculo{
+
+	private String color, marca, modelo;
+	
+	public Coche(String color, String marca, String modelo) {
+		super();
+		this.color = color;
+		this.marca = marca;
+		this.modelo = modelo;
+	}
+}

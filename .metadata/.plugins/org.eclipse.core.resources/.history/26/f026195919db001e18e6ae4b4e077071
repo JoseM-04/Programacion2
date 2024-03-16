@@ -1,0 +1,37 @@
+package Ejercicio_01;
+
+public class Vehiculo {
+	
+	private static int contadorVehiculos, kmTotales;
+	private int km;
+	
+	public Vehiculo() {
+		this.km = 0;
+	}
+
+	public static int getContadorVehiculos() {
+		return contadorVehiculos;
+	}
+
+	public static int getKmTotales() {
+		return kmTotales;
+	}
+
+	public int getKm() {
+		return km;
+	}
+	
+	public void andar(int kilometros) {
+		if (kilometros < 0) {
+			kilometros = kilometros * -1;
+		}
+		this.km += kilometros;
+		kmTotales += kilometros;
+		System.out.println("Kilometros introducidos correctamente.");
+	}
+	
+	public void verkilometros() {
+		System.out.println("El vehiculo ha recorrido un total de " + getKm() + "Km.");
+	}
+
+}

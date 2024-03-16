@@ -1,0 +1,19 @@
+package Principal;
+
+public class Ejercicio_03 {
+	
+	public static void main(String[] args) {
+		
+		/*3. Desarrolla una función en Java para verificar si un número es negativo.*/
+		System.out.println(numeronegativo(-7));
+	}
+	
+	public static void numeronegativo(int num) {
+		if (num < 0) {
+			System.out.println(num + " es negativo.");
+		}
+		else {
+			System.out.println(num + " es positivo");
+		}
+	}
+}

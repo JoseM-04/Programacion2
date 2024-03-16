@@ -1,0 +1,26 @@
+package Ejercicio_04;
+
+import java.util.Scanner;
+
+public class Uso_pizza {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int opciones;
+		
+		do {
+			
+			System.out.println("Elije una opcion :\n" + 
+										  "1. Pedir pizza\n" + 
+										  "0. Salir");
+			opciones =sc.nextInt();
+			
+			
+			
+		} while (opciones != 0);
+		
+	}
+
+}

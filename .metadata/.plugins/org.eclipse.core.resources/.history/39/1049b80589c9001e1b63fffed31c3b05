@@ -1,0 +1,13 @@
+package Ejercicio_04;
+
+public abstract class Figura {
+	
+	Figura(){
+		
+	}
+	
+	public double calcularArea() {
+		return 0;
+	}
+
+}

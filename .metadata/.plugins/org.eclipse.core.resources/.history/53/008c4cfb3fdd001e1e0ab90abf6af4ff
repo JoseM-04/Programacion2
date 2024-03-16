@@ -1,0 +1,15 @@
+package Ejercicio_03;
+
+public class Fraccion {
+
+	private int numerador;
+	private int denominador;
+	
+	public Fraccion(int numerador, int denominador) {
+		if (denominador == 0) {
+			throw new IllegalArgumentException("El denominador no puede ser cero.");
+		}
+		this.numerador = numerador;
+		this.denominador = denominador;
+	}
+}

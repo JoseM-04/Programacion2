@@ -1,0 +1,8 @@
+package Ejercicio_04;
+
+public class Pizza {
+
+	private static int totalPedidas = 0;
+	private static int totalServidas = 0;
+	private String tamaño, tipo, estado;
+}
